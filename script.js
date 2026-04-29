@@ -93,7 +93,7 @@ function createProductCard(product, category, isGrid = false) {
         class="w-full h-full object-cover transition-transform duration-500"
         onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';"
       />
-      <div class="hidden flex items-center justify-center w-full h-full bg-pink-100 text-3xl">🌸</div>
+      <div class="hidden flex items-center justify-center w-full h-full bg-amber-50 text-3xl">🐕</div>
     </div>
     <div class="p-3">
       <span class="inline-block px-2 py-0.5 mb-1 text-[9px] md:text-[10px] font-bold uppercase tracking-wider text-primary bg-cream-alt border border-orange-50 rounded-full">${category}</span>
@@ -178,8 +178,8 @@ function renderEvents() {
 
         const imageBlock = event.image
             ? `<img src="images/${event.image}" alt="${event.name}" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';" />
-         <div class="hidden flex items-center justify-center w-full h-full bg-green-50 text-4xl">🌼</div>`
-            : `<div class="flex items-center justify-center w-full h-full bg-green-50 text-4xl">🌼</div>`;
+         <div class="hidden flex items-center justify-center w-full h-full bg-amber-50 text-4xl">🐕</div>`
+            : `<div class="flex items-center justify-center w-full h-full bg-amber-50 text-4xl">🐕</div>`;
 
         card.innerHTML = `
       <div class="h-32 md:h-40 overflow-hidden bg-green-50 relative">
@@ -259,8 +259,8 @@ function init() {
         });
     }
 
-    renderGrid("today-grid", buckets.inStockFresh, "Today's products will be out soon, please contact us here.");
-    renderGrid("yesterday-grid", buckets.stillInStock, "Looking for something special from yesterday? Contact us.");
+    renderGrid("today-grid", buckets.inStockFresh, "No dogs available right now, please contact us here.");
+    renderGrid("yesterday-grid", buckets.stillInStock, "Looking for a recently listed dog? Contact us.");
     renderCarousel("bottom-carousel", buckets.all, "Our catalog is being updated.", true);
 
     renderEvents();

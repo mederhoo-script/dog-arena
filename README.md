@@ -1,6 +1,6 @@
-# 🌸 Flower Arena — Professional Floral Boutique
+# 🐕 Dog Arena — Premium Dog Selling Platform
 
-A modern, mobile-responsive, and production-ready flower shop website. Built with a focus on high-end aesthetics, smooth interaction, and easy content management.
+A modern, mobile-responsive, and production-ready dog selling website. Built with a focus on high-end aesthetics, smooth interaction, and easy content management.
 
 ---
 
@@ -28,27 +28,27 @@ Change your WhatsApp number, phone, email, and modal button text here.
 const shopConfig = {
     whatsapp: { number: "234..." },
     phone: "+234...",
-    email: "hello@..."
+    email: "hello@dogarena.com"
 };
 ```
 
-### 2. [`products.js`](./products.js) — *Product Catalog*
-Add or edit flowers here. Products are automatically classified into **In-Stock** and **Earlier Arrivals** based on their `New` date.
--   `New`: Set to today's date (YYYY-MM-DD) to show in **In-Stock**.
--   `New`: Set to yesterday's date to show in **Day One**.
--   `New`: Older dates move to **Two Day's Old**.
+### 2. [`products.js`](./products.js) — *Dog Catalog*
+Add or edit dogs here. Products are automatically classified into **Available Now** and **Recently Listed** based on their `New` date.
+-   `New`: Set to today's date (YYYY-MM-DD) to show in **Available Now**.
+-   `New`: Set to yesterday's date to show in **Recently Listed**.
+-   `New`: Older dates are hidden from the main sections.
 -   **All Products** always shows everything.
 
 ### 3. [`events.js`](./events.js) — *Upcoming Events*
-Manage seasonal events (Valentine's Day, Mother's Day, etc.) here. They appear in a clean grid at the bottom of the page.
+Manage dog events (shows, adoption fairs, breed showcases, etc.) here. They appear in a clean grid at the bottom of the page.
 
 ---
 
 ## ✨ Features
 -   **Horizontal Auto-Scroll**: The "All Products" section features an infinite marquee animation.
--   **Product Details Modal**: Clicking a product opens a beautiful popup with a direct WhatsApp order link.
+-   **Product Details Modal**: Clicking a dog listing opens a beautiful popup with a direct WhatsApp inquiry link.
 -   **Mobile First**: Fully responsive navigation with a custom hamburger menu.
--   **Zero-State Messages**: If a section is empty, it shows a friendly "Out of stock" message with a WhatsApp button.
+-   **Zero-State Messages**: If a section is empty, it shows a friendly "no dogs available" message with a WhatsApp button.
 -   **High Performance**: Lazy-loaded images and optimized Tailwind utility classes.
 
 ---
@@ -57,8 +57,8 @@ Manage seasonal events (Valentine's Day, Mother's Day, etc.) here. They appear i
 -   `index.html`: Main page structure.
 -   `styles.css`: Custom animations and Tailwind overrides.
 -   `script.js`: Core rendering logic and interactions.
--   `images/`: Directory for product and event photos.
+-   `images/`: Directory for dog and event photos.
 
 ---
 
-*© 2026 Flower Arena · Fresh Flowers Delivered Daily*
+*© 2026 Dog Arena · Your Perfect Companion Awaits*

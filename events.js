@@ -1,5 +1,5 @@
 // ============================================================
-// events.js — Flower Arena Upcoming Events Data
+// events.js — Dog Arena Upcoming Events Data
 //
 // Event object fields:
 //   name        — event display name
@@ -13,28 +13,28 @@
 
 var events = [
 
-    // ── Valentine's Day ────────────────────────────────────────
+    // ── Dog Show ───────────────────────────────────────────────
     {
-        name: "Valentine's Day",
-        date: "2026-02-14",
-        description: "Special love-themed bouquets available 💐",
-        image: "events/valentines.jpg"   // TODO: add images/events/valentines.jpg
+        name: "Annual Dog Show",
+        date: "2026-06-15",
+        description: "Meet our top breeds and find your perfect companion 🐕",
+        image: "events/dog_show.jpg"   // TODO: add images/events/dog_show.jpg
     },
 
-    // ── Mother's Day ───────────────────────────────────────────
+    // ── Puppy Adoption Fair ────────────────────────────────────
     {
-        name: "Mother's Day",
+        name: "Puppy Adoption Fair",
         date: "2026-05-10",
-        description: "Celebrate moms with beautiful flower arrangements 🌸",
-        image: "events/mothers_day.jpeg"   // TODO: add images/events/mothers_day.jpg
+        description: "Special selection of puppies available for adoption 🐾",
+        image: "events/adoption_fair.jpg"   // TODO: add images/events/adoption_fair.jpg
     },
 
-    // ── Spring Festival ────────────────────────────────────────
+    // ── Breed Showcase ─────────────────────────────────────────
     {
-        name: "Spring Festival",
+        name: "Breed Showcase",
         date: "2026-04-20",
-        description: "Fresh spring blooms for the season 🌷",
-        image: "events/spring_festival.jpeg"   // TODO: add images/events/spring_festival.jpg
+        description: "Discover rare and popular breeds up close 🦴",
+        image: "events/breed_showcase.jpg"   // TODO: add images/events/breed_showcase.jpg
     }
 
 ];

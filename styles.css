@@ -1,5 +1,5 @@
 /* ============================================================
-   styles.css — Flower Arena (Tailwind Addons)
+   styles.css — Dog Arena (Tailwind Addons)
    Only custom CSS for things Tailwind doesn't handle natively.
    ============================================================ */
 
@@ -84,7 +84,7 @@
 
 /* ── Card & Image Specifics ─────────────────────────────────── */
 .card-image-wrapper {
-    background: linear-gradient(135deg, #fce4ec, #f8bbd0);
+    background: linear-gradient(135deg, #fff3e0, #ffe0b2);
     overflow: hidden;
 }
 

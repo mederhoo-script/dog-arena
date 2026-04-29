@@ -1,140 +1,117 @@
 // ============================================================
-// products.js — Flower Arena Product Data
+// products.js — Dog Arena Product Data
 //
 // Dates are stored as static strings (YYYY-MM-DD). 
-// The system automatically moves products from "Today" to 
-// "Yesterday" as the real-world date passes.
+// The system automatically moves products from "Available Now" to 
+// "Recently Listed" as the real-world date passes.
 // ============================================================
 
 var products = {
 
-  // ── Roses ──────────────────────────────────────────────────
-  Roses: [
+  // ── Golden Retrievers ───────────────────────────────────────
+  "Golden Retrievers": [
     {
-      name: "Ever Red Rose",
-      image: "Roses/ever-red.jpg",
-      description: "Elegant red roses for special occasions 🌹",
+      name: "Sunny Golden Retriever",
+      image: "Golden Retrievers/sunny.jpg",
+      description: "Friendly, playful male Golden Retriever puppy 🐾",
       Old: "2026-03-20",
-      New: "2026-03-29"    // Today
+      New: "2026-03-29"
     },
     {
-      name: "Fiorella Sunset Mix",
-      image: "Roses/fiorella.jpg",
-      description: "Beautiful orange and red rose arrangement 🌺",
+      name: "Bella Golden Retriever",
+      image: "Golden Retrievers/bella.jpg",
+      description: "Sweet female Golden Retriever, great with kids 💛",
       Old: "2026-03-15",
-      New: "2026-03-26"    // Yesterday
-    },
+      New: "2026-03-26"
+    }
+  ],
+
+  // ── German Shepherds ────────────────────────────────────────
+  "German Shepherds": [
     {
-      name: "Pink Rose",
-      image: "Roses/pink-rose.jpg",
-      description: "Soft pink roses radiating warmth and love 💗",
+      name: "Rex German Shepherd",
+      image: "German Shepherds/rex.jpg",
+      description: "Loyal and intelligent male German Shepherd puppy 🦴",
       Old: "2026-03-18",
-      New: "2026-03-26"    // Yesterday
+      New: "2026-03-29"
     },
     {
-      name: "Pink Rose with Leaves",
-      image: "Roses/pink-rose+leaves.jpg",
-      description: "Pink roses with lush green leafy accents 🌿",
+      name: "Luna German Shepherd",
+      image: "German Shepherds/luna.jpg",
+      description: "Alert female German Shepherd, highly trainable 🐕",
       Old: "2026-03-17",
-      New: "2026-03-29"    // expired
-    },
+      New: "2026-03-26"
+    }
+  ],
+
+  // ── Labradors ───────────────────────────────────────────────
+  Labradors: [
     {
-      name: "White Rose",
-      image: "Roses/white-rose.jpg",
-      description: "Pure white roses symbolising elegance and purity 🤍",
+      name: "Chocolate Lab",
+      image: "Labradors/chocolate.jpg",
+      description: "Energetic chocolate Labrador male, loves to swim 🐶",
       Old: "2026-03-12",
-      New: "2026-03-29"    // Today
+      New: "2026-03-29"
     },
     {
-      name: "White Rose with Leaves",
-      image: "Roses/white-rose+leaves.jpg",
-      description: "Crisp white roses paired with vibrant green leaves 🌿",
+      name: "Black Lab",
+      image: "Labradors/black.jpg",
+      description: "Gentle black Labrador female, perfect family dog 🖤",
       Old: "2026-03-11",
-      New: "2026-03-25"    // Earlier
+      New: "2026-03-26"
     },
     {
-      name: "Yellow Rose",
-      image: "Roses/yellow-rose.jpg",
-      description: "Cheerful yellow roses to brighten any day ☀️",
+      name: "Yellow Lab",
+      image: "Labradors/yellow.jpg",
+      description: "Cheerful yellow Labrador, ready to brighten your home ☀️",
       Old: "2026-03-10",
-      New: "2026-03-22"    // expired
+      New: "2026-03-25"
     }
   ],
 
-  // ── Mums ───────────────────────────────────────────────────
-  Mums: [
+  // ── Bulldogs ────────────────────────────────────────────────
+  Bulldogs: [
     {
-      name: "Gold Mums Arrangement",
-      image: "Mums/gold-mums.jpg",
-      description: "Vibrant golden mums for a warm autumn feel 🍂",
+      name: "English Bulldog",
+      image: "Bulldogs/english.jpg",
+      description: "Calm and affectionate English Bulldog puppy 🐾",
       Old: "2026-03-10",
-      New: "2026-03-29"    // today
+      New: "2026-03-29"
     },
     {
-      name: "Lollipop Mums",
-      image: "Mums/lollipop.jpg",
-      description: "Fun round lollipop mums in mixed playful colours 🍭",
+      name: "French Bulldog",
+      image: "Bulldogs/french.jpg",
+      description: "Compact and playful French Bulldog, great for apartments 🏡",
       Old: "2026-03-08",
-      New: "2026-03-29"    // today
-    },
+      New: "2026-03-29"
+    }
+  ],
+
+  // ── Poodles ─────────────────────────────────────────────────
+  Poodles: [
     {
-      name: "Maroon Mums",
-      image: "Mums/maroon.jpg",
-      description: "Rich maroon mums with a deep, luxurious hue 🍷",
+      name: "Standard Poodle",
+      image: "Poodles/standard.jpg",
+      description: "Elegant and hypoallergenic Standard Poodle 🐩",
       Old: "2026-03-07",
-      New: "2026-03-25"    // today
+      New: "2026-03-29"
     },
     {
-      name: "Pink Mums Bouquet",
-      image: "Mums/pink-mums.jpg",
-      description: "Delicate pink mums perfect for any celebration 🌸",
+      name: "Miniature Poodle",
+      image: "Poodles/miniature.jpg",
+      description: "Adorable Miniature Poodle, intelligent and low-shedding 🤍",
       Old: "2026-03-06",
-      New: "2026-03-29"    // Today
-    },
-    {
-      name: "White Mums",
-      image: "Mums/white-mums.jpg",
-      description: "Classic white mums exuding freshness and purity 🤍",
-      Old: "2026-03-05",
-      New: "2026-03-25"    // Earlier
-    },
-    {
-      name: "Yellow Mums",
-      image: "Mums/yellow-mums.jpg",
-      description: "Bright yellow mums that bring sunshine indoors ☀️",
-      Old: "2026-03-04",
-      New: "2026-03-26"    // Yesterday
+      New: "2026-03-26"
     }
   ],
 
-  // ── Tulips ─────────────────────────────────────────────────
-  Tulips: [
-    {
-      name: "Cerise Tulip",
-      image: "Tulips/cerise-tulip.jpg",
-      description: "Vivid cerise tulips bursting with spring colour 🌷",
-      Old: "2026-03-05",
-      New: "2026-03-29"    // Today
-    },
-    {
-      name: "Sparta Tulip",
-      image: "Tulips/sparta-tulip.jpg",
-      description: "Bold red Sparta tulips — a timeless spring classic 🌷",
-      Old: "2026-03-03",
-      New: "2026-03-25"    // Earlier
-    }
-  ],
+  // ── Rottweilers ─────────────────────────────────────────────
+  Rottweilers: [],
 
-  // ── Chrysanthemums ─────────────────────────────────────────
-  Chrysanthemums: [],
+  // ── Beagles ─────────────────────────────────────────────────
+  Beagles: [],
 
-  // ── Carnations ─────────────────────────────────────────────
-  Carnations: [],
-
-  // ── Gypsophilla ────────────────────────────────────────────
-  Gypsophilla: [],
-
-  // ── Other Fillers ──────────────────────────────────────────
-  "Other Fillers": []
+  // ── Mixed Breeds ────────────────────────────────────────────
+  "Mixed Breeds": []
 
 };
