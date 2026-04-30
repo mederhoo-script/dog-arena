@@ -408,7 +408,7 @@
         </div>
         <div class="col-span-2">
           <label class="block text-xs font-bold uppercase tracking-wider text-muted mb-1">Description *</label>
-          <textarea id="p-description" required rows="2" placeholder="Beautiful red roses for special occasions 🌹"
+          <textarea id="p-description" required rows="2" placeholder="Friendly golden retriever puppy, great with kids 🐾"
             class="w-full border border-gray-200 rounded-xl px-4 py-2.5 text-sm focus:outline-none focus:ring-2 focus:ring-primary/40 resize-none"></textarea>
         </div>
       </div>
@@ -516,7 +516,7 @@ try {
   db   = getFirestore(app);
   if (cfg.cloudinary) cloudinaryConfig = cfg.cloudinary;
 } catch (err) {
-  console.error('[Flower Arena] Failed to load config:', err);
+  console.error('[Dog Arena] Failed to load config:', err);
   const errEl = document.getElementById('login-error');
   if (errEl) {
     errEl.textContent = 'Configuration error — please check Vercel environment variables.';
@@ -795,7 +795,7 @@ window.openProductModal = function(productId) {
     title.textContent = 'Edit Product';
     document.getElementById('product-id').value = productId;
     document.getElementById('p-name').value = p.name || '';
-    document.getElementById('p-category').value = p.category || 'Roses';
+    document.getElementById('p-category').value = p.category || 'Golden Retrievers';
     document.getElementById('p-description').value = p.description || '';
     document.getElementById('p-new').value = p.New || '';
     document.getElementById('p-old').value = p.Old || '';
@@ -1161,7 +1161,7 @@ async function uploadToCloudinary(file) {
   const formData = new FormData();
   formData.append('file', file);
   formData.append('upload_preset', uploadPreset);
-  formData.append('folder', 'flowers');
+  formData.append('folder', 'dogs');
   const uploadPromise = fetch(
     `https://api.cloudinary.com/v1_1/${cloudName}/image/upload`,
     { method: 'POST', body: formData }

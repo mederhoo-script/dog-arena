@@ -1,6 +1,6 @@
-# Flower Arena
+# Dog Arena
 
-A mobile-responsive static website for a floral boutique called "Flower Arena".
+A mobile-responsive static website for a dog selling platform called "Dog Arena".
 
 ## Tech Stack
 
@@ -15,13 +15,18 @@ A mobile-responsive static website for a floral boutique called "Flower Arena".
 ├── styles.css      # Custom CSS (animations, overrides)
 ├── script.js       # Core UI logic (product rendering, modals, filtering)
 ├── config.js       # Shop contact details (WhatsApp, Email)
-├── products.js     # Product catalog data
-├── events.js       # Seasonal events data
-└── images/         # Product and event images
+├── products.js     # Dog catalog data
+├── events.js       # Upcoming dog events data
+└── images/         # Dog and event images
     ├── events/
-    ├── Mums/
-    ├── Roses/
-    └── Tulips/
+    ├── Golden Retrievers/
+    ├── German Shepherds/
+    ├── Labradors/
+    ├── Bulldogs/
+    ├── Poodles/
+    ├── Rottweilers/
+    ├── Beagles/
+    └── Mixed Breeds/
 ```
 
 ## Running the App
@@ -34,9 +39,9 @@ python3 -m http.server 5000 --bind 0.0.0.0
 
 ## Key Features
 
-- Dynamic product filtering by freshness (In-Stock / Day One / Earlier Arrivals) based on current date
-- WhatsApp integration — product modals generate pre-filled WhatsApp message links
-- Seasonal events section
+- Dynamic product filtering by listing date (Available Now / Recently Listed) based on current date
+- WhatsApp integration — product modals generate pre-filled WhatsApp inquiry links
+- Upcoming dog events section
 - Mobile-first responsive design with hamburger menu
 - CSS-based infinite marquee for the "All Products" section
 
@@ -46,8 +51,8 @@ A Firebase-powered admin dashboard at `/admin.html` (linked discreetly from the 
 
 ### Features
 - **Login** — Firebase Auth (email/password). Create users in the Firebase Console.
-- **Products** — Full CRUD. Add/edit/delete flowers across Roses, Mums, Tulips categories. Freshness labels show live status (In-Stock / Day One / Two Days Old). Includes a "Seed from Site Data" button to import the static products.js catalog into Firestore.
-- **Events** — Full CRUD. Add/edit/delete upcoming seasonal events.
+- **Products** — Full CRUD. Add/edit/delete dogs across Golden Retrievers, German Shepherds, Labradors, Bulldogs, Poodles and other breed categories. Freshness labels show live status (Available Now / Recently Listed). Includes a "Seed from Site Data" button to import the static products.js catalog into Firestore.
+- **Events** — Full CRUD. Add/edit/delete upcoming dog events (shows, adoption fairs, breed showcases).
 - **Settings** — Edit WhatsApp number, phone, email, and modal button visibility. Changes are live immediately.
 
 ### Firebase Setup Required

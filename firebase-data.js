@@ -54,7 +54,7 @@ async function loadFirestoreData() {
     }
   } catch (err) {
     // Silently fall back to static data — no disruption to users
-    console.info('[Flower Arena] Using static data (Firestore unavailable):', err.message);
+    console.info('[Dog Arena] Using static data (Firestore unavailable):', err.message);
   } finally {
     window.__firebaseDataLoading = false;
     if (typeof window.__onFirebaseDataReady === 'function') {
